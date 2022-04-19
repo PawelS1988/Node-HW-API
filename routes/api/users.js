@@ -8,7 +8,7 @@ require("dotenv").config();
 const gravatar = require("gravatar");
 const secret = process.env.SECRET;
 const multer = require("multer");
-const { sendMail } = require("./middleware/sendgrid");
+const { sendMail } = require("./mailer");
 const { nanoid } = require("nanoid");
 const Jimp = require("jimp");
 const fs = require("fs");
